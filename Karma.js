@@ -1,11 +1,19 @@
 /* Script made by Dylan Taylor/Dylan the Villain with help from Frank of The Filth. Feel free to use it, but accrediting is nice!
 
 This simple script allows you to have a text display on your "unit info" screen. It'll be based on the parameter of ID 0.
-To change the name of the karma meter, change replace all instances of "Karma" in "this.drawKarma" to whatever you're naming it- this'll be by default on
-lines 15 and 18. Make sure to change the "Text Renderer.drawSignText(x, y, "Karma")" to the same as your custom name if you wish. 
+To change the name of the karma meter, change replace all instances of "Karma" in "this.drawKarma" to whatever you're naming it.
+Make sure to change the "Text Renderer.drawSignText(x, y, "Karma")" to the same as your custom name if you wish. 
 to change the color of the text itself, find the hex color code online and past it into "Color = (hexcode here)."
 By default I have 5 texts made- if you want to add one, copy the format in "else if" below "TextRenderer.drawSignText".
 to change the position of the text, modify the "X" and "Y" variables at the bottom.
+
+when editing the parameter value, use this method:
+- anything less than  negative 25 is REALLY BAD
+- negative 25 to 0 is BAD
+- 0 is NEUTRAL
+- 1 to 25 is GOOD
+- anything over 25 is REALLY GOOD
+there is no maximum for the parameter set.
 */
 (function () {
     var alias1 = UnitMenuTopWindow.drawWindowContent;
