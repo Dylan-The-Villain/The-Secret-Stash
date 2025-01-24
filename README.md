@@ -1,0 +1,1 @@
+This repository has Javascript codes created by me for the tool "SRPG Studio". Please accreddit if necessary, the code itself or the readme.txt will tell you if I need something specifically accreddited. Happy downloading!
